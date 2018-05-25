@@ -1,0 +1,42 @@
+{
+  "name": "oiu",
+  "version": "0.0.1",
+  "description": "move money to support open-source",
+  "main": "build/src/index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "bin": {
+    "oiu": "build/cli/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jaredpereira/donate.git"
+  },
+  "author": "Jared Pereira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaredpereira/donate/issues"
+  },
+  "homepage": "https://github.com/jaredpereira/donate#readme",
+  "devDependencies": {
+    "@types/yargs": "^11.0.0",
+    "typescript": "^2.8.3",
+    "yargs": "^11.0.0"
+  },
+  "dependencies": {
+    "@types/inquirer": "0.0.41",
+    "@types/node": "^10.1.2",
+    "@types/pify": "^3.0.2",
+    "@types/read-package-tree": "^5.2.0",
+    "@types/text-table": "^0.2.0",
+    "chalk": "^2.4.1",
+    "cli-table": "^0.3.1",
+    "ethereum-address": "0.0.4",
+    "ethers": "^3.0.17",
+    "inquirer": "^5.2.0",
+    "ora": "^2.1.0",
+    "pify": "^3.0.0",
+    "read-package-tree": "^5.2.1"
+  }
+}

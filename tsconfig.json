@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"sourceMap": true,
+		"module": "commonjs",
+		"target": "es5",
+		"allowJs": true,
+    "outDir": "build",
+    "lib": ["ES2015", "ES5", "DOM"]
+	},
+	"compileOnSave": false,
+	"include": ["src/*.ts", "cli/*.ts"],
+  "output": "/build"
+}
