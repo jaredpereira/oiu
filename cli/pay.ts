@@ -74,15 +74,17 @@ export default {
 
     console.log('\n' + paymentTable.toString() + '\n')
 
-    let confirm = await inquirer.prompt<{boolean}>({
+    let confirm = await inquirer.prompt<{confirm:boolean}>({
       type: 'confirm',
       name: 'confirm',
       message: chalk.blue('send ETH?')
     })
 
-    for(let i = 0; i < payments.length; i++){
-      let payment = payments[i]
-      wallet.send(payment.to.address, ethers.utils.parseEther(payment.amount.toString()))
+    if(confirm.confirm) {
+      for(let i = 0; i < payments.length; i++){
+        let payment = payments[i]
+        wallet.send(payment.to.address, ethers.utils.parseEther(payment.amount.toString()))
+      }
     }
 
     console.log(chalk.bold.green("Thank you for supporting people!"))
